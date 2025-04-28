@@ -1,6 +1,6 @@
 <?php
 
-namespace iCreativez\ChatApp\Console\Commands;
+namespace ICreativez\ChatApp\Console\Commands;
 
 use Illuminate\Console\Command;
 
