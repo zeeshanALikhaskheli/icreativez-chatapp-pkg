@@ -3,19 +3,18 @@
 namespace iCreativez\ChatApp;
 
 use Illuminate\Support\ServiceProvider;
+use iCreativez\ChatApp\Console\Commands\InstallChatApp;
 
 class ChatAppServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        // Register config
         $this->mergeConfigFrom(__DIR__ . '/config/chat.php', 'chat');
-        $this->mergeConfigFrom(__DIR__ . '/config/chat.php', 'chat');
-    
+        
         // Register commands
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \iCreativez\ChatApp\Console\Commands\InstallChatApp::class,
+                InstallChatApp::class,
             ]);
         }
     }
