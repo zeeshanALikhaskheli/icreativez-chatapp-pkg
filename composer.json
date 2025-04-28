@@ -1,0 +1,27 @@
+{
+    "name": "icreativez/chat-app",
+    "description": "A Realtime Laravel Livewire single page chat application",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Icreativez\\ChatApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zeeshan Ali",
+            "email": "alizeeshan14323@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iCreativez\\ChatApp\\ChatAppServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}
