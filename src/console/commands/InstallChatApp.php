@@ -1,8 +1,8 @@
 <?php
 
-namespace ICreativez\ChatApp\Console\Commands;
+namespace iCreativez\ChatApp\Console\Commands;
 
-use Illuminate\Console\Command;
+use iCreativez\ChatApp\Console\Command;
 
 class InstallChatApp extends Command
 {
