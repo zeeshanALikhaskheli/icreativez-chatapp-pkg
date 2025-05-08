@@ -3,6 +3,7 @@
 namespace iCreativez\ChatApp;
 
 use Illuminate\Support\ServiceProvider;
+// use iCreativez\ChatApp\Console\Commands\InstallChatApp;
 use iCreativez\ChatApp\Console\Commands\InstallChatApp;
 
 class ChatAppServiceProvider extends ServiceProvider
@@ -17,6 +18,9 @@ class ChatAppServiceProvider extends ServiceProvider
                 InstallChatApp::class,
             ]);
         }
+        $this->commands([
+            InstallChatApp::class,
+        ]);
     }
 
     public function boot()
